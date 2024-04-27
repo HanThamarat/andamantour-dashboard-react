@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Regular';
+  src: local('Prompt-Regular'),
+  url('./assets/fonts/Prompt-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Bold';
+  src: local('Prompt-Bold'),
+  url('./assets/fonts/Prompt-Bold.ttf') format('truetype');
+}
+
+body {
+  background-color: #F5F5F5;
+}
