@@ -1,4 +1,5 @@
 import Nav,{ NavItem } from "../component/layout/nav";
+import { useEffect } from 'react';
 
 export default function Index() {
 
@@ -17,6 +18,11 @@ export default function Index() {
         },
     ];
 
+
+    useEffect(() => {
+
+    }, []);
+
     return(
         <div className="h-screen font-regular bg-blue-800">
             <Nav>
@@ -24,6 +30,14 @@ export default function Index() {
                      <NavItem key={navKey} text={navItem.text} link={navItem.link} />
                 ))}
             </Nav>
+            <div className="flex justify-around items-center border h-full">
+                <div>
+                    <span>Test</span>
+                </div>
+                <div>
+                    <span>Test</span>
+                </div>
+            </div>
         </div>
     );
 }
