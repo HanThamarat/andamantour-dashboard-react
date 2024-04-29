@@ -5,12 +5,15 @@ import { Link } from "react-router-dom";
 export default function Nav({ children }) {
     return(
         <Headroom>
-            <nav className="flex justify-between px-48 py-5 items-center">
+            <nav className="flex justify-between px-48 py-5 items-center lg:px-10 sm:px-5">
                 <div className="text-2xl font-bold text-white">
                     <span>AndamanTour</span>
                 </div>
                 <div>
-                    <ul className="flex">
+                    <div className="hidden 2xl:">
+                        Humber
+                    </div>
+                    <ul className="flex lg:hidden">
                         { children }
                     </ul>
                 </div>
